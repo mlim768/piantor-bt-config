@@ -27,7 +27,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp SQT  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC  &kp LGUI  &mo 1  &kp SPACE  &kp RET  &mo 2  &kp RALT
+&kp CAPS  &kp Q  &mt RG(W) W  &kp E  &mt RG(R) R  &mt RG(T) T  &kp Z  &kp U  &kp I  &kp O  &kp P  &kp SLASH  &kp LCTRL  &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G  &kp H  &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &kp SQT  &kp QUESTION  &kp LSHFT  &kp Y  &mt RG(RA(X)) X  &mt RG(C) C  &mt LG(V) V  &kp B  &mt LG(N) N  &kp M  &kp COMMA  &kp DOT  &kp MINUS  &kp ESC  &mo 1  &lt 4 DEL  &lt 4 RET  &mt RIGHT_COMMAND TAB  &lt 3 SPACE  &kp LG(Z)
             >;
         };
 
@@ -62,40 +62,19 @@
         Symbols_Arrows {
             display-name = "Symbols_Arrows";
             bindings = <
-&kp SEMICOLON  &kp EXCL  &kp AT  &kp HASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COLON  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp SEMICOLON  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans  &kp PAGE_DOWN  &kp UP_ARROW  &kp PAGE_UP  &trans  &trans  &kp COLON  &kp CARET  &kp AMPS  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        extra_layer_2 {
+        Num {
             display-name = "EXTRA 2";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PLUS  &kp NUMBER_7  &kp NUMBER_8  &kp N9  &kp EQUAL  &kp CARET  &trans  &trans  &trans  &trans  &trans  &trans  &kp ASTERISK  &kp NUMBER_4  &kp N5  &kp N6  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp NUMBER_1  &kp N2  &kp N3  &kp N0  &kp DOT  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        extra_layer_3 {
+        DaVinci {
             display-name = "EXTRA 3";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_4 {
-            display-name = "EXTRA 4";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_5 {
-            display-name = "EXTRA 5";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_6 {
-            display-name = "EXTRA 6";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
