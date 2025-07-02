@@ -62,7 +62,7 @@
         Symbols_Arrows {
             display-name = "Symbols_Arrows";
             bindings = <
-&kp SEMICOLON  &kp EXCL  &kp AT  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COLON  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp SEMICOLON  &kp EXCL  &kp AT  &kp HASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COLON  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
