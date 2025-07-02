@@ -14,6 +14,27 @@
 };
 
 / {
+    behaviors {
+        DBTap: DBTap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DBTAP";
+            #binding-cells = <0>;
+            bindings = <&kp A>, <&kp C>, <&kp NUMBER_4>;
+        };
+
+        HMR: HMR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <1 5 16 15 14 13 26 27 28 39 30 19 20 21 22 4>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -27,7 +48,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPS  &kp Q  &mt RG(W) W  &kp E  &mt RG(R) R  &mt RG(T) T  &kp Z  &kp U  &kp I  &kp O  &kp P  &kp SLASH  &kp LCTRL  &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G  &kp H  &mt RIGHT_SHIFT J  &mt RIGHT_GUI K  &mt RIGHT_ALT L  &kp SQT  &kp QUESTION  &kp LSHFT  &kp Y  &mt RG(RA(X)) X  &mt RG(C) C  &mt LG(V) V  &kp B  &mt LG(N) N  &kp M  &kp COMMA  &kp DOT  &kp MINUS  &kp ESC  &mo 1  &lt 4 BACKSPACE  &lt 4 RET  &mt RIGHT_COMMAND TAB  &lt 3 SPACE  &kp LG(Z)
+&kp CAPS  &kp Q  &HMR RG(W) W  &kp E  &HMR RG(R) R  &HMR RG(T) T  &kp Z  &kp U  &kp I  &kp O  &kp P  &kp SLASH  &kp LCTRL  &HMR LCTRL A  &HMR LEFT_ALT S  &HMR LEFT_GUI D  &HMR LEFT_SHIFT F  &kp G  &kp H  &HMR RIGHT_SHIFT J  &HMR RIGHT_GUI K  &HMR RIGHT_ALT L  &kp APOS  &kp QUESTION  &kp LSHFT  &kp Y  &HMR RG(RA(X)) X  &HMR RG(C) C  &HMR LG(V) V  &kp B  &HMR LG(N) N  &kp M  &kp COMMA  &kp DOT  &kp MINUS  &kp ESC  &mo 1  &lt 4 BACKSPACE  &lt 4 RET  &HMR RIGHT_COMMAND TAB  &lt 3 SPACE  &kp LG(Z)
             >;
         };
 
