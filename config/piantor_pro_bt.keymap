@@ -111,7 +111,7 @@
         DaVinci {
             display-name = "EXTRA 3";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp RG(S)  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp RG(Z)  &trans  &trans  &trans  &trans  &trans  &trans  &kp R  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp RA(Y)  &trans  &trans  &trans  &trans  &trans  &trans  &to 0  &kp LEFT  &kp RIGHT  &kp RG(C)  &kp RG(V)  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE  &kp L  &trans  &trans  &trans
             >;
         };
     };
