@@ -114,14 +114,14 @@
         };
 
         Num {
-            display-name = "EXTRA 2";
+            display-name = "Numbers";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &kp PLUS  &kp NUMBER_7  &kp NUMBER_8  &kp N9  &kp EQUAL  &kp CARET  &trans  &trans  &trans  &trans  &trans  &trans  &kp ASTERISK  &kp NUMBER_4  &kp N5  &kp N6  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp NUMBER_1  &kp N2  &kp N3  &kp N0  &kp DOT  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         DaVinci {
-            display-name = "EXTRA 3";
+            display-name = "DaVinci";
             bindings = <
 &kp RG(S)  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp RG(Z)  &trans  &trans  &trans  &trans  &trans  &trans  &kp R  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp RA(Y)  &trans  &trans  &trans  &trans  &trans  &trans  &to 0  &kp LEFT  &kp RIGHT  &kp RG(C)  &kp RG(V)  &kp BACKSPACE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE  &kp L  &trans  &trans  &trans
             >;
