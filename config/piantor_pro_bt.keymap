@@ -22,13 +22,13 @@
             bindings = <&kp PERIOD>, <&kp COLON>;
         };
 
-        HMR: HMR {
+        HM: HM {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMR";
+            label = "HM";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <1 5 16 15 14 13 26 27 28 39 30 19 20 21 22 4>;
@@ -48,16 +48,18 @@
             bindings = <&kp COMMA>, <&kp SEMICOLON>;
         };
 
-        HMRShift: HMRShift {
+        HMShift: HMShift {
             compatible = "zmk,behavior-hold-tap";
-            label = "HMRSHIFT";
+            label = "HMSHIFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "hold-preferred";
             hold-trigger-key-positions = <1 5 16 15 14 13 26 27 28 39 30 19 20 21 22 4>;
+            hold-while-undecided;
+            hold-trigger-on-release;
         };
 
         DTapdbquote: DTapdbquote {
@@ -80,6 +82,56 @@
             #binding-cells = <0>;
             bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
         };
+
+        HMShiftR: HMShiftR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMSHIFTR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-key-positions = <0 1 2 4 3 5 12 13 14 16 17 24 25 26 27 28 29 36 37 38 15>;
+            hold-trigger-on-release;
+        };
+
+        HMShiftL: HMShiftL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMSHIFTL";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+        };
+
+        HMR: HMR {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-key-positions = <0 1 2 4 3 5 12 13 14 16 17 24 25 26 27 28 29 36 37 38 15>;
+            hold-trigger-on-release;
+            flavor = "balanced";
+        };
+
+        HML: HML {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            hold-while-undecided;
+            hold-trigger-on-release;
+            flavor = "balanced";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+        };
     };
 
     keymap {
@@ -95,7 +147,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPS  &kp Q  &HMR RG(W) W  &kp E  &HMR RG(R) R  &HMR RG(T) T  &kp Z  &kp U  &kp I  &kp O  &kp P  &kp SLASH  &kp LCTRL  &HMR LCTRL A  &HMR LEFT_ALT S  &HMR LEFT_GUI D  &HMRShift LEFT_SHIFT F  &kp G  &kp H  &HMRShift RIGHT_SHIFT J  &HMR RIGHT_GUI K  &HMR RIGHT_ALT L  &DTapdbquote  &DTapexclamation  &to 5  &kp Y  &HMR RG(RA(X)) X  &HMR RG(C) C  &HMR LG(V) V  &kp B  &HMR LG(N) N  &kp M  &DTapSemicolon  &DTapColon  &DTapunderscore  &kp ESC  &lt 1 ESCAPE  &lt 4 BACKSPACE  &lt 4 RET  &HMR RIGHT_COMMAND TAB  &lt 3 SPACE  &HMR LC(UP_ARROW) ESC
+&kp CAPS  &kp Q  &mt RG(W) W  &kp E  &mt RG(R) R  &mt RG(T) T  &kp Z  &kp U  &kp I  &kp O  &kp P  &kp SLASH  &kp LCTRL  &HM LCTRL A  &HM LEFT_ALT S  &HM LEFT_GUI D  &HMShift LEFT_SHIFT F  &kp G  &kp H  &HMShift RIGHT_SHIFT J  &HM RIGHT_GUI K  &HM RIGHT_ALT L  &DTapdbquote  &DTapexclamation  &to 5  &kp Y  &mt RG(RA(X)) X  &mt RG(C) C  &mt LG(V) V  &kp B  &mt LG(N) N  &kp M  &DTapSemicolon  &DTapColon  &DTapunderscore  &kp ESC  &lt 1 ESCAPE  &lt 4 BACKSPACE  &lt 4 RET  &mt RIGHT_COMMAND TAB  &lt 3 SPACE  &mt LC(UP_ARROW) ESC
             >;
         };
 
