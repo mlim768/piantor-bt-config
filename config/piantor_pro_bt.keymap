@@ -147,7 +147,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPS  &kp Q  &mt RG(W) W  &kp E  &mt RG(R) R  &mt RG(T) T  &kp Z  &kp U  &kp I  &kp O  &kp P  &kp SLASH  &kp LCTRL  &HM LCTRL A  &HM LEFT_ALT S  &HM LEFT_GUI D  &HMShift LEFT_SHIFT F  &kp G  &kp H  &HMShift RIGHT_SHIFT J  &HM RIGHT_GUI K  &HM RIGHT_ALT L  &DTapdbquote  &DTapexclamation  &to 5  &kp Y  &mt RG(RA(X)) X  &mt RG(C) C  &mt LG(V) V  &kp B  &mt LG(N) N  &kp M  &DTapSemicolon  &DTapColon  &DTapunderscore  &kp ESC  &lt 1 ESCAPE  &lt 4 BACKSPACE  &lt 4 RET  &mt RIGHT_COMMAND TAB  &lt 3 SPACE  &mt LC(UP_ARROW) ESC
+&kp CAPS  &kp Q  &mt RG(W) W  &kp E  &mt RG(R) R  &mt RG(T) T  &kp Z  &kp U  &kp I  &kp O  &kp P  &kp SLASH  &kp LCTRL  &HML LCTRL A  &HML LEFT_ALT S  &HML LEFT_GUI D  &HMShiftL LEFT_SHIFT F  &kp G  &kp H  &HMShiftR RIGHT_SHIFT J  &HMR RIGHT_GUI K  &HMR RIGHT_ALT L  &DTapdbquote  &DTapexclamation  &to 5  &kp Y  &mt RG(RA(X)) X  &mt RG(C) C  &mt LG(V) V  &kp B  &mt LG(N) N  &kp M  &DTapSemicolon  &DTapColon  &DTapunderscore  &kp ESC  &lt 1 ESCAPE  &lt 4 BACKSPACE  &lt 4 RET  &mt RIGHT_COMMAND TAB  &lt 3 SPACE  &mt LC(UP_ARROW) CAPSLOCK
             >;
         };
 
