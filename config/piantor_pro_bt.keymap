@@ -59,6 +59,27 @@
             flavor = "balanced";
             hold-trigger-key-positions = <1 5 16 15 14 13 26 27 28 39 30 19 20 21 22 4>;
         };
+
+        DTapdbquote: DTapdbquote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAPDBQUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp DOUBLE_QUOTES>;
+        };
+
+        DTapunderscore: DTapunderscore {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAPUNDERSCORE";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
+        };
+
+        DTapexclamation: DTapexclamation {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAPEXCLAMATION";
+            #binding-cells = <0>;
+            bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+        };
     };
 
     keymap {
@@ -74,7 +95,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&kp CAPS  &kp Q  &HMR RG(W) W  &kp E  &HMR RG(R) R  &HMR RG(T) T  &kp Z  &kp U  &kp I  &kp O  &kp P  &kp SLASH  &kp LCTRL  &HMR LCTRL A  &HMR LEFT_ALT S  &HMR LEFT_GUI D  &HMRShift LEFT_SHIFT F  &kp G  &kp H  &HMRShift RIGHT_SHIFT J  &HMR RIGHT_GUI K  &HMR RIGHT_ALT L  &kp APOS  &kp QUESTION  &to 5  &kp Y  &HMR RG(RA(X)) X  &HMR RG(C) C  &HMR LG(V) V  &kp B  &HMR LG(N) N  &kp M  &DTapSemicolon  &DTapColon  &kp MINUS  &kp ESC  &lt 1 ESCAPE  &lt 4 BACKSPACE  &lt 4 RET  &HMR RIGHT_COMMAND TAB  &lt 3 SPACE  &HMR LC(UP_ARROW) ESC
+&kp CAPS  &kp Q  &HMR RG(W) W  &kp E  &HMR RG(R) R  &HMR RG(T) T  &kp Z  &kp U  &kp I  &kp O  &kp P  &kp SLASH  &kp LCTRL  &HMR LCTRL A  &HMR LEFT_ALT S  &HMR LEFT_GUI D  &HMRShift LEFT_SHIFT F  &kp G  &kp H  &HMRShift RIGHT_SHIFT J  &HMR RIGHT_GUI K  &HMR RIGHT_ALT L  &DTapdbquote  &DTapexclamation  &to 5  &kp Y  &HMR RG(RA(X)) X  &HMR RG(C) C  &HMR LG(V) V  &kp B  &HMR LG(N) N  &kp M  &DTapSemicolon  &DTapColon  &DTapunderscore  &kp ESC  &lt 1 ESCAPE  &lt 4 BACKSPACE  &lt 4 RET  &HMR RIGHT_COMMAND TAB  &lt 3 SPACE  &HMR LC(UP_ARROW) ESC
             >;
         };
 
